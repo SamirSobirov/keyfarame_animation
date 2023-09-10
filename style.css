@@ -1,0 +1,41 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box{
+        width: 80px;
+        height: 80px;
+        box-shadow: 0px 0px 10px #c4c4c4;
+        border-radius: 12px;
+    }
+
+    .active {
+        animation: colors 1s ease infinite;
+    }
+
+    @keyframes colors {
+        0% {
+            background-color: brown;
+        }
+
+        50% {
+            background-color: #9efa00;
+        }
+
+        75% {   
+            background-color: #3a4eff;
+        }
+
+        100% {
+            background-color: #fff200;
+        }
+    }
